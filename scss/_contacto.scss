@@ -1,0 +1,43 @@
+.main-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: $tablet) {
+    .main-contacto{
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $espacio-chico;
+
+}
+
+.botones-form {
+    border: solid 1px $color-secundario;
+    width: 200px;
+    padding: $espacio-chico;
+    border-radius: 10px;
+    background-color: $color-terciario;
+    font-weight: bold;
+
+    &:hover {
+        background: $color-primario;
+        color: $color-terciario;
+    }
+}
+
+iframe {
+    max-width: 100%;
+}

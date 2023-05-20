@@ -1,5 +1,9 @@
+@charset "UTF-8";
 /*PALETA DE COLORES*/
 /*FUENTES*/
+/*RESOLUCIONES DE PANTALLAS*/
+/*Separaciones (márgenes y paddings)*/
+/*ESTILOS COMUNES PARA TODAS LAS SECCIONES*/
 body {
   font-family: "Roboto", sans-serif;
   background-color: #000;
@@ -42,6 +46,7 @@ h1, h2, h3 {
 
 p {
   font-size: 20px;
+  text-align: center;
 }
 
 footer {
@@ -49,6 +54,7 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
+  /*anidacion*/
 }
 footer .container-redes a {
   color: yellow;
@@ -64,6 +70,21 @@ footer .container-redes a {
   gap: 20px;
 }
 
+@media (min-width: 768px) {
+  .contenedor-banner {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+.banner-uno, .banner-dos, .banner-tres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner-uno iconify-icon, .banner-dos iconify-icon, .banner-tres iconify-icon {
+  font-size: 60px;
+}
+
 .main-contacto {
   display: flex;
   flex-direction: column;
@@ -74,9 +95,9 @@ footer .container-redes a {
 @media (min-width: 768px) {
   .main-contacto {
     display: grid;
-    grid-template-columns: repeat(2 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-content: center;
+    justify-items: center;
   }
 }
 form {
@@ -86,22 +107,33 @@ form {
   justify-content: center;
   gap: 20px;
 }
+form .campos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .botones-form {
   border: solid 1px #b2b2b2;
   width: 200px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   background-color: yellow;
   font-weight: bold;
 }
 .botones-form:hover {
-  background: #000;
+  background-color: #000;
   color: yellow;
 }
 
 iframe {
   max-width: 100%;
+}
+
+textarea {
+  height: 150px;
+  width: 200px;
 }
 
 /*# sourceMappingURL=styles.css.map */

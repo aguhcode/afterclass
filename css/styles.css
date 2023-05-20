@@ -6,27 +6,26 @@
 /*ESTILOS COMUNES PARA TODAS LAS SECCIONES*/
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #000;
-  color: #b2b2b2;
+  background-color: rgb(255, 126, 152);
+  color: white;
 }
 
 .nav-link,
 .nav-link.active,
 .navbar-nav .nav-link.active {
-  color: #b2b2b2;
+  color: white;
 }
 .nav-link:hover,
 .nav-link.active:hover,
 .navbar-nav .nav-link.active:hover {
-  color: yellow;
+  color: whitesmoke;
 }
-
 .navbar-toggler {
   background-color: yellow;
 }
 
 .carousel-item img {
-  height: 250px;
+  height: 50px;
 }
 
 @media (min-width: 768px) {
@@ -36,7 +35,7 @@ body {
 }
 @media (min-width: 992px) {
   .carousel-item img {
-    height: 80vh;
+    height: 60vh;
   }
 }
 h1, h2, h3 {
@@ -45,7 +44,7 @@ h1, h2, h3 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -119,12 +118,12 @@ form .campos {
   width: 200px;
   padding: 10px;
   border-radius: 10px;
-  background-color: yellow;
+  background-color: white;
   font-weight: bold;
 }
 .botones-form:hover {
-  background-color: #000;
-  color: yellow;
+  background-color: white;
+  color: pink;
 }
 
 iframe {
@@ -141,5 +140,14 @@ textarea {
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   grid-gap: 1rem;
 }
+.logo{
+  display: flex;
+  color: white;
+  align-items: center;
+  }
+  .logo img{
+  height: 50px;
+  margin-right: 15px;
+  }
 
 /*# sourceMappingURL=styles.css.map */

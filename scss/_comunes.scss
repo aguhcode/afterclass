@@ -9,7 +9,6 @@ body {
 .nav-link.active,
 .navbar-nav .nav-link.active {
     color: $color-secundario;
-
     &:hover {
         color: $color-terciario;
     }
@@ -20,7 +19,7 @@ body {
 }
 
 .carousel-item img {
-    height: 250px;
+    height: 100px;
 }
 
 @media (min-width: $tablet) {
